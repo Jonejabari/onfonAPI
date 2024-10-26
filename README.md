@@ -17,7 +17,7 @@ Both APIs provide identical functionality:
 
 # Node.js API #
 Navigate to Node.js project
-- nodeApi
+- cd nodeApi
 # install dependencies
 - npm install
 # Start the server
