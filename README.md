@@ -14,3 +14,15 @@ contact-api-monorepo/
 |__ README.md
 
 ## Fearures ##
+
+Both APIs provide identical functionality:
+- Retrieve all contacts
+- Get a specific contacts by name
+- Add new contacts
+- Update existing contacts
+- Automatic timestamp tracking for all records
+
+## Installation & Setup
+
+Node.js API
+
