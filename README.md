@@ -4,15 +4,6 @@ A monorepo containing two implementations of a contact API build with Node.js an
 
 ## Project Structure ##
 
-contact-api-monorepo/
-|-- node-api/
-|     |--- server.js
-|     |--- package.js
-|--- python-api/
-|      |--- server.py
-|
-|__ README.md
-
 ## Fearures ##
 
 Both APIs provide identical functionality:
