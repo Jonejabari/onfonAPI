@@ -25,4 +25,21 @@ Both APIs provide identical functionality:
 ## Installation & Setup
 
 Node.js API
+# Navigate to Node.js project #
+cd nodeApi
+# install dependencies
+npm install
+# Start the server
+npm run dev
 
+Python API
+# Navigate to Python project #
+cd pythonApi
+# install dependencies
+pip install 
+# Start the server
+python server.py
+
+Both servers will run on http://localhost:5001
+
+API Endpoints
