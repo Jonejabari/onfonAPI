@@ -26,7 +26,7 @@ Both APIs provide identical functionality:
 
 # Node.js API #
 Navigate to Node.js project
-cd nodeApi
+- nodeApi
 # install dependencies
 npm install
 # Start the server
@@ -34,7 +34,7 @@ npm run dev
 
 # Python API #
 Navigate to Python project
-cd pythonApi
+- cd pythonApi
 # install dependencies
 pip install 
 # Start the server
