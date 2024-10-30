@@ -15,18 +15,28 @@ contacts = [
         "name": "Jabari Jabari",
         "contact_number": "266 5353 0099",
         "date": datetime.now(pytz.UTC).isoformat()
+    },
+    {
+        "name": "Tsephe Lethata",
+        "contact_number": "266784748",
+        "date": datetime.now(pytz.UTC).isoformat()
     }
+     
 ]
 
 def get_cuurent_time():
     """Helper function to get current UTC time in ISO format"""
     return datetime.now(pytz.UTC).isoformat()
 
+
+# GET all contacts endpoint
 @app.route('/contacts', methods=['GET'])
 def get_contacts():
     """Get all contacts"""
     return jsonify(contacts)
 
+
+# GET contact by name endpoint
 @app.route('/contacts/<name>', methods=['GET'])
 def get_contact(name):
     """Get a specif contact by name"""
@@ -38,6 +48,7 @@ def get_contact(name):
         return jsonify(contact)
     return jsonify({"message": "contact not found"}), 404
 
+# Add new user
 @app.route('/contacts', methods=['POST'])
 def add_contact():
     """Add new contact"""
@@ -55,6 +66,7 @@ def add_contact():
     contacts.append(new_contact)
     return jsonify(new_contact), 201
 
+# Update existing contact
 @app.route('/contacts/<name>', methods=['PUT'])
 def update_contact(name):
     """Update an existing contact"""
